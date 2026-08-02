@@ -1,24 +1,54 @@
 aid: zuoyebang
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zuoyebang.png
 name: Zuoyebang
-description: 'Zuoyebang is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: edtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: Zuoyebang (作业帮) is a Chinese educational technology company founded in 2015 and headquartered
+  in Beijing, backed by SoftBank Vision Fund. It operates a "technology + education" online learning platform
+  whose flagship homework-help app lets K-12 students photograph a problem to get step-by-step answers,
+  on-demand tutoring, and self-study tools across all subjects, alongside math tutoring products aimed
+  at elementary-school parents and teachers. It is a consumer mobile/web product with no public developer
+  program, open platform, or documented API surface at the time of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/zuoyebang/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - softbank-vision-fund
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Edtech
-apis: []
+- Education
+- Online Learning
+- Tutoring
+- Consumer
+- China
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/zuoyebang-domain-security.yml
+- type: Website
+  url: https://www.zuoyebang.com/
+apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
